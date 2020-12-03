@@ -20,9 +20,7 @@ const (
 type PageAllocator struct {
 	heapSize     uint
 	heap         []byte
-	freePages    []*PageHeader
 	pages        []*PageHeader
-	startPointer unsafe.Pointer
 }
 
 type PageHeader struct {
